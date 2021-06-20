@@ -1,11 +1,11 @@
-FROM httpd:2.4
+FROM centos:lastest
 
 MAINTAINER Dewa
 
-RUN apt-get install -y httpd
+RUN yum install httpd -y
 
 COPY index.html /var/www/html/
 
-CMD /usr/bin/httpd -D FOREGROUND
+CMD ["/usr/sbin/httpd","-D","FOREGROUND"]
 
 EXPOSE 80
