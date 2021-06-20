@@ -1,4 +1,4 @@
-FROM centos:lastest
+FROM centos:latest
 
 MAINTAINER Dewa
 
